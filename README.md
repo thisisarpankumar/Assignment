@@ -9,12 +9,12 @@ How to run the code: <br>
 What has been done: <br>
   Till now I have add these following things: <br>
 1. Add New File.
-2. Open File.
-3. Save File.
+2. Open File feature.
+3. Save File feature.
 4. Undo & Redo feature.
 5. Bold, Italic & Underline feature.
 6. Superscript & Subscript feature.
-7. Quit File.
+7. Quit File feature.
 <br><br>
 
 Issues/challenges: <br>
