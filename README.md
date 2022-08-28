@@ -23,5 +23,5 @@ For any Issue Please Report me on my E-mail. <br>
 E-mail ID: thisisarpan2017@gmail.com <br>
 <br><br>
 
-Features <br>
+Features: <br>
 1. Shortcut Keys has been added.
