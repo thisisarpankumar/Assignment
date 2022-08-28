@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>788</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/Assets/icons/notepad.png</normaloff>:/Assets/icons/notepad.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>788</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="separator"/>
+    <addaction name="actionBold"/>
+    <addaction name="actionItalic"/>
+    <addaction name="actionUnderline"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Me"/>
+   </widget>
+   <widget class="QMenu" name="menugf">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionPrint"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menugf"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="separator"/>
+   <addaction name="actionBold"/>
+   <addaction name="actionItalic"/>
+   <addaction name="actionUnderline"/>
+   <addaction name="separator"/>
+   <addaction name="actionSuperscript"/>
+   <addaction name="actionSubscript"/>
+   <addaction name="separator"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="separator"/>
+   <addaction name="actionPrint"/>
+   <addaction name="actionExit"/>
+   <addaction name="separator"/>
+   <addaction name="actionAbout"/>
+   <addaction name="actionAbout_Me"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/newFileIcon.ico</normaloff>:/Assets/icons/newFileIcon.ico</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/saveFileIcon.ico</normaloff>:/Assets/icons/saveFileIcon.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/printIcon.ico</normaloff>:/Assets/icons/printIcon.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/quitIcon.png</normaloff>:/Assets/icons/quitIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/undoIcon.png</normaloff>:/Assets/icons/undoIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/redoIcon.png</normaloff>:/Assets/icons/redoIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionBold">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/bold-text.png</normaloff>:/Assets/icons/bold-text.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bold</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionItalic">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/italic.png</normaloff>:/Assets/icons/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Italic</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionUnderline">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/underline.png</normaloff>:/Assets/icons/underline.png</iconset>
+   </property>
+   <property name="text">
+    <string>Underline</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/aboutQtIcon.png</normaloff>:/Assets/icons/aboutQtIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionAbout_Me">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/aboutIcon.png</normaloff>:/Assets/icons/aboutIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionSuperscript">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/superscript.png</normaloff>:/Assets/icons/superscript.png</iconset>
+   </property>
+   <property name="text">
+    <string>Superscript</string>
+   </property>
+  </action>
+  <action name="actionSubscript">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/subscript.png</normaloff>:/Assets/icons/subscript.png</iconset>
+   </property>
+   <property name="text">
+    <string>Subscript</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/Assets/icons/openFileIcon.ico</normaloff>:/Assets/icons/openFileIcon.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
